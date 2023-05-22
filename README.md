@@ -16,11 +16,11 @@ The program has a graphic panel window with 6 options, a parameter list and seve
 ## Zr, -Zi ##
 This panel shows a Nyquist plot, which is a standard way to visualize impedance data. The scale on the graph will adjust automatically based on the data. However, if you want to manually set a specific range, you can disable the Auto-axis feature by clicking on the graph
 
-## 3D plot ##
-This panel will plot 3D plots, as selected by the user. This is useful for many datasets, more than 20 I guess, it will allow the user to see tendencies or check systematic errors in the fits.
-
 ## Zr, Zi ##
 These panels will show the dependency of impedances (real, imaginary or modulus) as a function of frequency and the differences between the calculated and experimental values (if any).
+
+## 3D plot ##
+This panel will show a 3D plot of selected datasets, either in Nyquist, Zr or Zi or their difference, as selected by the user. This is useful for many datasets, more than 20 I guess, it will allow the user to see tendencies or check systematic errors in the fits.
 
 ## Model ##
 A circuit can be created by the user by selecting element circuits.
