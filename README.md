@@ -11,10 +11,13 @@ If you are using Windows 10, you can download and install YAPPARI v5 from this p
 YAPPARI-5 is designed to fit multiple datasets of impedance spectra to a user-made circuit. You are encouraged to contribute to this help file, you can send it to me or fork it on Github. As much I like programming, writing documentation is boring. A short tutorial is included in the help pdf file which is installed with the exe file. 
 
 # Panels #
-The program has a graphic panel window with 5 options, a parameter list and several commands grouped in the right side of the window.
+The program has a graphic panel window with 6 options, a parameter list and several commands grouped in the right side of the window.
 
 ## Zr, -Zi ##
 This panel shows a Nyquist plot, which is a standard way to visualize impedance data. The scale on the graph will adjust automatically based on the data. However, if you want to manually set a specific range, you can disable the Auto-axis feature by clicking on the graph
+
+## 3D plot ##
+This panel will plot 3D plots, as selected by the user. This is useful for many datasets, more than 20 I guess, it will allow the user to see tendencies or check systematic errors in the fits.
 
 ## Zr, Zi ##
 These panels will show the dependency of impedances (real, imaginary or modulus) as a function of frequency and the differences between the calculated and experimental values (if any).
@@ -36,7 +39,7 @@ The parameters obtained for Warburg in other programs are typically by fitting a
 
 s=1/(Q $\sqrt{2})$
 
-The Warburg "open" describes the impedance of a finite-length diffusion with reflective boundary.  The formula used here is
+The Warburg "open" describes the impedance of a finite-length diffusion with reflective boundary. The formula used here is
 
 Z<sub>o</sub>=(Aw/ $\sqrt{jw})$ coth(B $\sqrt{jw})$
 
@@ -44,6 +47,7 @@ The Warburg "short" describes the impedance of a finite-length diffusion with tr
 
 Z<sub>s</sub>=(Aw/ $\sqrt{jw})$ tanh(B $\sqrt{jw})$
 
+Fitting of Warburg parameters will be slow as checks on the validity of the calculations are required (so, be patient with this one).
 Some others can be added upon request, if I will have the time and if there is an interest for it.
 
 When you create a circuit using the circuit editor, the circuit is not valid until you have properly connected all the elements together. Once the circuit is valid, a LED labeled "valid" will light up on the model panel, indicating that the circuit is ready for use. 
