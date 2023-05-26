@@ -8,7 +8,7 @@ This program can be referenced in publications as http://dx.doi.org/10.13140/RG.
 
 If you are using Windows 10, you can download and install YAPPARI v5 from this page. This program can perform multiple datasets fits. For a single dataset fit a simpler program called [Yappari 4.2](https://github.com/nitad54448/win10-installer-yappari-4.2), also as a Windows 10 installer.
 
-YAPPARI-5 is designed to fit multiple datasets of impedance spectra to a user-made circuit. You are encouraged to contribute to this help file, you can send it to me or fork it on Github. As much I like programming, writing documentation is boring. A short tutorial is included in the help pdf file which is installed with the exe file. 
+YAPPARI-5 is designed to fit multiple datasets of impedance spectra to a user-made circuit. You are encouraged to contribute to this help file, you can send it to me or fork it on Github. As much as I like programming, writing documentation is boring. A short tutorial is included in the help pdf file which is installed with the exe file. 
 
 # Panels #
 The program has a graphic panel window with 6 options, a parameter list and several commands grouped in the right side of the window.
