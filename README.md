@@ -47,7 +47,7 @@ with n - number of electrons, A - electrode surface area, D - diffusion coeffici
 
 The parameters obtained for Warburg in other programs are typically by fitting a CPE with n=0.5, you will get the same result but the Q parameter obtained is
 
-s=1/(Q $\sqrt{2})$
+Aw=1/(Q $\sqrt{2})$
 
 The Warburg "open" describes the impedance of a finite-length diffusion with reflective boundary. The formula used here is
 
