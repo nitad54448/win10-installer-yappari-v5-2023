@@ -37,7 +37,7 @@ Z<sub>w</sub>= Aw/($\sqrt{w})$ -jAw/($\sqrt{w})$
 
 This element contributes eqally to Zre and Zim so it is a straigh line, ideally at 45 degrees. The Aw term is expressed in Ohm sec^-0.5 and is called Warburg coefficient. It is expressed as
 
-Aw=(RT/(n<sup>2</sup> F<sup>2</sup> A $\sqrt{2})$) * (1/$\sqrt{Do})$ Cs,o - 1/$\sqrt{Dr})$ Cs,r)
+Aw=(RT/(n<sup>2</sup>F<sup>2</sup>A $\sqrt{2}$) * (1/$\sqrt{Do})$ Cs,o - 1/$\sqrt{Dr})$ Cs,r)
 
 The parameters obtained for Warburg in other programs are typically by fitting a CPE with n=0.5, you will get the same result but the Q parameter obtained is
 
