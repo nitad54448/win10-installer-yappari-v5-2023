@@ -39,6 +39,8 @@ This element contributes eqally to Zre and Zim so it is a straigh line, ideally 
 
 Aw = \frac{RT}{{n^2 F^2 A \sqrt{2} \cdot \left(\frac{1}{{\sqrt{Do}}} Cs_o - \frac{1}{{\sqrt{Dr}}} Cs_r\right)}}
 
+Aw = \frac{RT}{{n^2 F^2 A \sqrt{2} \cdot \left(\frac{1}{{\sqrt{Do}}} Cs_o - \frac{1}{{\sqrt{Dr}}} Cs_r\right)}}
+
 Aw=(RT/(n<sup>2</sup> F<sup>2</sup> A $\sqrt{2}$ * (1/ $\sqrt{Do)$ Cs,o - 1/ $\sqrt{Dr}$ Cs,r)
 
 The parameters obtained for Warburg in other programs are typically by fitting a CPE with n=0.5, you will get the same result but the Q parameter obtained is
