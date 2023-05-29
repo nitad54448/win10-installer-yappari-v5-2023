@@ -43,6 +43,8 @@ This element contributes eqally to Zre and Zim so it is a straigh line, ideally 
 
 Aw = (RT / (n^2 F^2 A sqrt(2))) * ((1 / (sqrt(Do) Cs_o)) - (1 / (sqrt(Dr) Cs_r)))
 
+Aw = \frac{RT}{{n^2 F^2 A \sqrt{2}}} \left(\frac{1}{{\sqrt{Do} \cdot Cs_o}} - \frac{1}{{\sqrt{Dr} \cdot Cs_r}}\right)
+
 with n - number of electrons, A - electrode surface area, D - diffusion coefficient of the electroactive species, CS,O , CS,R - surface concentrations of oxidized and reduced species.
 
 The parameters obtained for Warburg in other programs are typically by fitting a CPE with n=0.5, you will get the same result but the Q parameter obtained is
