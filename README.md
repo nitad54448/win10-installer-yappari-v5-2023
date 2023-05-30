@@ -37,7 +37,7 @@ The elements used now (as of march 2023) are: Resistor, Capacitor, Inductor, CPE
 
 Warburg element represents semi-infinite diffusion to or from a flat elecrode coefficient, expressed here as:
 
-Z<sub>ω</sub>= Aw/($\sqrt{ω})$ -jAw/($\sqrt{ω})$
+Z(ω)= A<sub>w</sub>/($\sqrt{ω})$ -jA<sub>w</sub>/($\sqrt{ω})$
 
 This element contributes equally to Zr and Zi so it appears as a straigh line in a Nyquist plot, at 45 degrees or a straight line in Bode plot (log |Z| vs. log ω) with a slope of value –1/2. The Aw term is expressed in Ohm sec<Sup>-1/2</sup> and is called Warburg coefficient. It is expressed as
 
@@ -47,17 +47,17 @@ with n - number of electrons, A - electrode surface area, D - diffusion coeffici
 
 The parameters for Warburg in other programs are typically obtained by fitting a CPE with n=0.5, you will get the same result but the Q parameter obtained in this case is
 
-Aw=1/(Q $\sqrt{2})$
+A<sub>w</sub>=1/(Q $\sqrt{2})$
 
 If the thickness of the diffusion layer is known, two models were developped. The Warburg "open" describes the impedance of a finite-length diffusion with __reflective boundary__. The formula used here is
 
-Z<sub>o</sub>=(Aw/ $\sqrt{jω})$ coth(B $\sqrt{jω})$
+Z<sub>o</sub>=(A<sub>w</sub>/ $\sqrt{jω})$ coth(B $\sqrt{jω})$
 
-Here Aw is the standard Warburg coefficient and B is B=d/$\sqrt{D}$ , where d is the Nernst diffusion layer thickness and D is the diffusion coefficient.
+Here A<sub>w</sub> is the standard Warburg coefficient and B is B=d/$\sqrt{D}$ , where d is the Nernst diffusion layer thickness and D is the diffusion coefficient.
 
 The Warburg "short" describes the impedance of a finite-length diffusion with __transmissible boundary__, with the expression:
 
-Z<sub>s</sub>=(Aw/ $\sqrt{jω})$ tanh(B $\sqrt{jω})$
+Z<sub>s</sub>=(A<sub>w</sub>/ $\sqrt{jω})$ tanh(B $\sqrt{jω})$
 
 Aw is the standard Warburg coefficient and B=d/$\sqrt{D}$ as defined above.
 
