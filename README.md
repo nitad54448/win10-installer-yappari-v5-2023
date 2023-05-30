@@ -5,7 +5,7 @@
 # win10-installer-yappari-v5-2023
 Windows 10 installer, compiled with Labview 2023
 
-version 22 may 2023
+version 30 may 2023
 
 YAPPARI stands for Yet Another Program for Analysis and Research in Impedance.
 This program can be referenced in publications as http://dx.doi.org/10.13140/RG.2.2.15160.83200
