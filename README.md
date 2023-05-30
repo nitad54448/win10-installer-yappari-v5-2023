@@ -49,13 +49,13 @@ The parameters for Warburg in other programs are typically obtained by fitting a
 
 A<sub>w</sub>=1/(Q $\sqrt{2})$
 
-If the thickness of the diffusion layer is known, two other models can be applied. The Warburg "open" describes the impedance of a finite-length diffusion with __reflective boundary__, also called finite space Warburg. The formula used here is
+If the thickness of the diffusion layer is known, two other models can be applied. The Warburg "open" describes the impedance of diffusion with __reflective boundary__, also called finite space Warburg. The formula used here is
 
 Z<sub>o</sub>=(A<sub>w</sub>/ $\sqrt{jω})$ coth(B $\sqrt{jω})$
 
 Here A<sub>w</sub> is the standard Warburg coefficient and B is B=d/ $\sqrt{D}$ , where d is the Nernst diffusion layer thickness and D is the diffusion coefficient.
 
-The Warburg "short" describes the impedance of a finite-length diffusion with __transmissible boundary__, or finite-space Warburg, with the expression:
+The Warburg "short" describes the impedance of a finite-length diffusion with __transmissible boundary__, with the expression:
 
 Z<sub>s</sub>=(A<sub>w</sub>/ $\sqrt{jω})$ tanh(B $\sqrt{jω})$
 
