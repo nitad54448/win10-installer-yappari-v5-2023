@@ -44,6 +44,8 @@ This element contributes equally to Zr and Zi so it appears as a straigh line in
 <img src="https://latex.codecogs.com/svg.image?Aw&space;=&space;\frac{RT}{{n^2&space;F^2&space;A&space;\sqrt{2}}}&space;\left(\frac{1}{{\sqrt{Do}&space;\cdot&space;Cb_o}}&space;-&space;\frac{1}{{\sqrt{Dr}&space;\cdot&space;Cb_r}}\right)" title="https://latex.codecogs.com/svg.image?Aw = \frac{RT}{{n^2 F^2 A \sqrt{2}}} \left(\frac{1}{{\sqrt{Do} \cdot Cb_o}} - \frac{1}{{\sqrt{Dr} \cdot Cb_r}}\right)" />
 
 with n - number of electrons, A - electrode surface area, D - diffusion coefficient of the electroactive species, Cb,o , Cb,r - bulk concentrations of oxidized and reduced species.
+or simplified for one species
+<math display="block" indentalign="left"><mrow><mrow><mstyle indentshift="3em" indentshiftlast="3em"><mi>σ</mi></mstyle></mrow></mrow><mrow><mo linebreak="nobreak">=</mo><mstyle indentshift="3em" indentshiftlast="3em"><mfrac><mrow><mn>2</mn><mi>R</mi><mi>T</mi></mrow><mrow><msup><mrow><mi>n</mi></mrow><mrow><mn>2</mn></mrow></msup><msup><mrow><mi>F</mi></mrow><mrow><mn>2</mn></mrow></msup><msqrt><mn>2</mn></msqrt><msqrt><mi>D</mi></msqrt><mi>C</mi></mrow></mfrac></mstyle></mrow></math>
 
 The parameters for Warburg in other programs are typically obtained by fitting a CPE with n=0.5, you will get the same result but the Q parameter obtained in this case is
 
