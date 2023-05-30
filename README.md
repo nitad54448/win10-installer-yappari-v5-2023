@@ -53,7 +53,7 @@ If the thickness of the diffusion layer is known, two models were developped. Th
 
 Z<sub>o</sub>=(A<sub>w</sub>/ $\sqrt{jω})$ coth(B $\sqrt{jω})$
 
-Here A<sub>w</sub> is the standard Warburg coefficient and B is B=d/$\sqrt{D}$ , where d is the Nernst diffusion layer thickness and D is the diffusion coefficient.
+Here A<sub>w</sub> is the standard Warburg coefficient and B is B=d/ $\sqrt{D}$ , where d is the Nernst diffusion layer thickness and D is the diffusion coefficient.
 
 The Warburg "short" describes the impedance of a finite-length diffusion with __transmissible boundary__, with the expression:
 
