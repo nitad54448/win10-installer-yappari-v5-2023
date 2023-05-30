@@ -37,9 +37,9 @@ The elements used now (as of march 2023) are: Resistor, Capacitor, Inductor, CPE
 
 Warburg element represents semi-infinite diffusion to or from a flat elecrode coefficient, expressed here as:
 
-Z<sub>w</sub>= Aw/($\sqrt{w})$ -jAw/($\sqrt{w})$
+Z<sub>ω</sub>= Aw/($\sqrt{ω})$ -jAw/($\sqrt{ω})$
 
-This element contributes eqally to Zre and Zim so it is a straigh line in a Nyquist plot, at 45 degrees or a straight line in Bode plot (log |Z| vs. log ω) with a slope of value –1/2. The Aw term is expressed in Ohm sec<Sup>-1/2</sup> and is called Warburg coefficient. It is expressed as
+This element contributes equally to Zr and Zi so it appears as a straigh line in a Nyquist plot, at 45 degrees or a straight line in Bode plot (log |Z| vs. log ω) with a slope of value –1/2. The Aw term is expressed in Ohm sec<Sup>-1/2</sup> and is called Warburg coefficient. It is expressed as
 
 <img src="https://latex.codecogs.com/svg.image?Aw&space;=&space;\frac{RT}{{n^2&space;F^2&space;A&space;\sqrt{2}}}&space;\left(\frac{1}{{\sqrt{Do}&space;\cdot&space;Cb_o}}&space;-&space;\frac{1}{{\sqrt{Dr}&space;\cdot&space;Cb_r}}\right)" title="https://latex.codecogs.com/svg.image?Aw = \frac{RT}{{n^2 F^2 A \sqrt{2}}} \left(\frac{1}{{\sqrt{Do} \cdot Cb_o}} - \frac{1}{{\sqrt{Dr} \cdot Cb_r}}\right)" />
 
@@ -51,13 +51,13 @@ Aw=1/(Q $\sqrt{2})$
 
 If the thickness of the diffusion layer is known, two models were developped. The Warburg "open" describes the impedance of a finite-length diffusion with __reflective boundary__. The formula used here is
 
-Z<sub>o</sub>=(Aw/ $\sqrt{jw})$ coth(B $\sqrt{jw})$
+Z<sub>o</sub>=(Aw/ $\sqrt{jω})$ coth(B $\sqrt{jω})$
 
 Here Aw is the standard Warburg coefficient and B is B=d/$\sqrt{D}$ , where d is the Nernst diffusion layer thickness and D is the diffusion coefficient.
 
 The Warburg "short" describes the impedance of a finite-length diffusion with __transmissible boundary__, with the expression:
 
-Z<sub>s</sub>=(Aw/ $\sqrt{jw})$ tanh(B $\sqrt{jw})$
+Z<sub>s</sub>=(Aw/ $\sqrt{jω})$ tanh(B $\sqrt{jω})$
 
 Aw is the standard Warburg coefficient and B=d/$\sqrt{D}$ as defined above.
 
