@@ -27,15 +27,16 @@ These panels will show the dependency of impedances (real, imaginary or modulus)
 This panel will show a 3D plot of selected datasets, either in Nyquist, Zr or Zi or their difference, as selected by the user. This is useful for many datasets, more than 20 I guess, it will allow the user to see tendencies or check systematic errors in the fits.
 
 ## Model ##
-A circuit can be created by the user by selecting element circuits.
+A circuit can be created by the user by selecting element circuits. Rememeber that before creating a model you need some data (if you forget the data, and already have a model built, you can download data then modify insiginicantly the model to check for ts validity. However, in doing so, the paramaters of the model will be initialized to standard values).
 Up to ten elements can be added (obviously it is not realistic to fit such a circuit, unless you want to fit a crocodile). Only the first 18 parameters will be shown (to prevent outrageous fits).
 When you click on one of the ten available cases, a new window will appear where you can select the element you want to add. Simply click on the picture of the element you want to add and it will be added to the model. The available circuit elements include resistors, capacitors, inductors, and more complex elements such as constant phase elements or Warburg elements.
 
 You can edit the png image files to your liking (just for aesthetics, the calculations are not affected), they are in the subdirectory __/models__. The size of the png files should be 145x100 pixels.
 
+### Elements ###
 The elements used now (as of march 2023) are: Resistor, Capacitor, Inductor, CPE, Zarc, simple Randles circuit, Randles with kinetic and diffusion, Warburg (semi-infinite linear diffusion), Warburg short, Warburg Long, Gerischer; Havriliak-Negami and several compositions of these.
 
-Warburg element represents semi-infinite diffusion to or from a flat elecrode coefficient, expressed here as:
+Warburg element represents semi-infinite diffusion to or from a flat electrode coefficient, expressed here as:
 
 Z(ω)= A<sub>w</sub>/($\sqrt{ω})$ -jA<sub>w</sub>/($\sqrt{ω})$
 
@@ -61,7 +62,7 @@ Z<sub>s</sub>=(A<sub>w</sub>/ $\sqrt{jω})$ tanh(B $\sqrt{jω})$
 
 Aw is the standard Warburg coefficient and B=d/ $\sqrt{D}$ as defined above.
 
-Fitting the Warburg short parameters will be very slow in this program as checks on the validity of the calculations are required, particularly for high frequencies where the values are very small and may be translated as NANs (so, be patient with this one, or adjust manually until a final fit, starting from a good position in the solutions' space).
+Fitting the Warburg short and Warburg-open parameters will be $very$ slow in this program as checks on the validity of the calculations are required, particularly for high frequencies where the values are very small and may be translated as NANs (so, be patient with Warburgs open and short, or adjust manually the parameters before a final fit, starting from a good position in the solutions' space).
 
 A very good introduction to all these parameters can be found [here](https://pubs.acs.org/doi/10.1021/acsmeasuresciau.2c00070).
 
@@ -88,7 +89,7 @@ Brief help listing the version of the program.
 
 # Commands #
 ## Read data ##
-This command opens a menu with three options as of now, designing which type of file read.
+This command opens a menu with several options as of now, designing which type of file to read. Note that reading a new file will just add more data wihtout lossing the previous data. You can remove some of the data with the command __Erase selected datasets__.
 
 __MFLI csv__
 This is a comma separated values file as obtained from MFLI/MFIA, a Zurich Instruments impedance analyzer. As in the Zview text file, multiple data sets can be saved or read from this file. In the data folder that is provided with this installer you can find such a file containing 34 measurements of the same sample. It would be boring and useless to fit all these 34 datasets one by one. Yappari-5 can handle such multiple data sets.
