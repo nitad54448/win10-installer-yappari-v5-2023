@@ -63,6 +63,8 @@ Aw is the standard Warburg coefficient and B=d/ $\sqrt{D}$ as defined above.
 
 Fitting the Warburg short parameters will be very slow in this program as checks on the validity of the calculations are required, particularly for high frequencies where the values are very small and may be translated as NANs (so, be patient with this one, or adjust manually until a final fit, starting from a good position in the solutions' space).
 
+A very good introduction to all these parameters can be found [here](https://pubs.acs.org/doi/10.1021/acsmeasuresciau.2c00070).
+
 Some others functions can be added upon request, if I will have the time and if there is real interest for them.
 
 When you create a circuit using the circuit editor, the circuit is not valid until you have properly connected all the elements together. Once the circuit is valid, a LED labeled "valid" will light up on the model panel, indicating that the circuit is ready for use. 
