@@ -33,13 +33,13 @@ When you click on one of the ten available cases, a new window will appear where
 
 You can edit the png image files to your liking (just for aesthetics, the calculations are not affected), they are in the subdirectory __/models__. The size of the png files should be 145x100 pixels.
 
-The elements used now (as of march 2023) are: Resistor, Capacitor, Inductor, CPE, Zarc, simple Randles circuit, Randles with kinetic and diffusion, Warburg (infinite diffusion), Warburg short, Warburg Long, Gerischer; Havriliak-Negami and several compositions of these.
+The elements used now (as of march 2023) are: Resistor, Capacitor, Inductor, CPE, Zarc, simple Randles circuit, Randles with kinetic and diffusion, Warburg (semi-infinite linear diffusion), Warburg short, Warburg Long, Gerischer; Havriliak-Negami and several compositions of these.
 
 Warburg element represents semi-infinite diffusion to or from a flat elecrode coefficient, expressed here as:
 
 Z<sub>w</sub>= Aw/($\sqrt{w})$ -jAw/($\sqrt{w})$
 
-This element contributes eqally to Zre and Zim so it is a straigh line in a Nyquist plot, at 45 degrees. The Aw term is expressed in Ohm sec<Sup>-1/2</sup> and is called Warburg coefficient. It is expressed as
+This element contributes eqally to Zre and Zim so it is a straigh line in a Nyquist plot, at 45 degrees or a straight line in Bode plot (log |Z| vs. log ω) with a slope of value –1/2. The Aw term is expressed in Ohm sec<Sup>-1/2</sup> and is called Warburg coefficient. It is expressed as
 
 <img src="https://latex.codecogs.com/svg.image?Aw&space;=&space;\frac{RT}{{n^2&space;F^2&space;A&space;\sqrt{2}}}&space;\left(\frac{1}{{\sqrt{Do}&space;\cdot&space;Cb_o}}&space;-&space;\frac{1}{{\sqrt{Dr}&space;\cdot&space;Cb_r}}\right)" title="https://latex.codecogs.com/svg.image?Aw = \frac{RT}{{n^2 F^2 A \sqrt{2}}} \left(\frac{1}{{\sqrt{Do} \cdot Cb_o}} - \frac{1}{{\sqrt{Dr} \cdot Cb_r}}\right)" />
 
@@ -49,22 +49,21 @@ The parameters for Warburg in other programs are typically obtained by fitting a
 
 Aw=1/(Q $\sqrt{2})$
 
-
-The Warburg "open" describes the impedance of a finite-length diffusion with reflective boundary. The formula used here is
+If the thickness of the diffusion layer is known, two models were developped. The Warburg "open" describes the impedance of a finite-length diffusion with __reflective boundary__. The formula used here is
 
 Z<sub>o</sub>=(Aw/ $\sqrt{jw})$ coth(B $\sqrt{jw})$
 
-Here Aw is the standard Warburg coefficient and B is B=d/sqrt(D) , where d is the Nernst diffusion layer thickness.
+Here Aw is the standard Warburg coefficient and B is B=d/$\sqrt{D}$ , where d is the Nernst diffusion layer thickness and D is the diffusion coefficient.
 
-The Warburg "short" describes the impedance of a finite-length diffusion with transmissible boundary, with the expression:
+The Warburg "short" describes the impedance of a finite-length diffusion with __transmissible boundary__, with the expression:
 
 Z<sub>s</sub>=(Aw/ $\sqrt{jw})$ tanh(B $\sqrt{jw})$
 
-Aw is the standard Warburg coefficient and B=d/sqrt(D) , where d is the Nernst diffusion layer thickness.
+Aw is the standard Warburg coefficient and B=d/$\sqrt{D}$ as defined above.
 
-Fitting the Warburg short parameters will be very slow as checks on the validity of the calculations are required, for high frequencies the values are very small, translated as NANs (so, be patient with this one).
+Fitting the Warburg short parameters will be very slow in this program as checks on the validity of the calculations are required, particularly for high frequencies where the values are very small and may be translated as NANs (so, be patient with this one, or adjust manually until a final fit, starting from a good position in the solutions' space).
 
-Some others functionscan be added upon request, if I will have the time and if there is an interest for it.
+Some others functions can be added upon request, if I will have the time and if there is real interest for them.
 
 When you create a circuit using the circuit editor, the circuit is not valid until you have properly connected all the elements together. Once the circuit is valid, a LED labeled "valid" will light up on the model panel, indicating that the circuit is ready for use. 
 
