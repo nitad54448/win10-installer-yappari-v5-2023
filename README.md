@@ -59,7 +59,7 @@ The Warburg "short" describes the impedance of a finite-length diffusion with __
 
 Z<sub>s</sub>=(A<sub>w</sub>/ $\sqrt{jω})$ tanh(B $\sqrt{jω})$
 
-Aw is the standard Warburg coefficient and B=d/$\sqrt{D}$ as defined above.
+Aw is the standard Warburg coefficient and B=d/ $\sqrt{D}$ as defined above.
 
 Fitting the Warburg short parameters will be very slow in this program as checks on the validity of the calculations are required, particularly for high frequencies where the values are very small and may be translated as NANs (so, be patient with this one, or adjust manually until a final fit, starting from a good position in the solutions' space).
 
