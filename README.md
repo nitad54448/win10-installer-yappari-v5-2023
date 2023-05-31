@@ -1,13 +1,13 @@
 # win10-installer-yappari-v5-2023
 Windows 10 installer, compiled with Labview 2023
 
-version 30 may 2023
-cosmetic changes of the models on 31st of may, 2023
+version 31 may 2023
+(small cosmetic changes of the models, otherwise the same as previous version)
 
 YAPPARI stands for Yet Another Program for Analysis and Research in Impedance.
 This program can be referenced in publications as http://dx.doi.org/10.13140/RG.2.2.15160.83200
 
-If you are using Windows 10, you can download and install YAPPARI v5 from this page. This program can perform multiple datasets fits. For a single dataset fit a simpler program called [Yappari 4.2](https://github.com/nitad54448/win10-installer-yappari-4.2), also as a Windows 10 installer.
+If you are using Windows 10, you can download and install YAPPARI v5 from this page. This program can perform multiple datasets fits. For a single dataset you may want to use a simpler program called [Yappari 4.2](https://github.com/nitad54448/win10-installer-yappari-4.2), available also as a Windows 10 installer.
 
 YAPPARI-5 is designed to fit multiple datasets of impedance spectra to a user-made circuit. You are encouraged to contribute to this help file, you can send it to me or fork it on Github. As much as I like programming, writing documentation is boring. A short tutorial is included in the help pdf file which is installed with the exe file. 
 
