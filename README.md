@@ -65,6 +65,8 @@ A very good introduction to all these parameters can be found [here](https://pub
 
 Some others functions can be added upon request, if I will have the time and if there is real interest for them.
 
+### Create a model ###
+
 When you create a circuit using the circuit editor, the circuit is not valid until you have properly connected all the elements together. Once the circuit is valid, a LED labeled "valid" will light up on the model panel, indicating that the circuit is ready for use. 
 
 Once the circuit is valid, you can see a list of all the parameters for each element of the circuit. Each parameter is labeled with a decimal, which indicates which element it belongs to. For example, the first element of the circuit will have parameters labeled as 0.x, the second element as 1.x, and so on.
