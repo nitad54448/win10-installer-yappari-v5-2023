@@ -1,11 +1,8 @@
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-
 # win10-installer-yappari-v5-2023
 Windows 10 installer, compiled with Labview 2023
 
 version 30 may 2023
+cosmetic changes of the models on 31st of may, 2023
 
 YAPPARI stands for Yet Another Program for Analysis and Research in Impedance.
 This program can be referenced in publications as http://dx.doi.org/10.13140/RG.2.2.15160.83200
@@ -166,3 +163,9 @@ It was written in Labview and it includes the JKI toolkits for Labview, © 2018,
 For questions or comments:
 
 __Nita DRAGOE__, Université Paris-Saclay, ICMMO/SP2M, 91400 Orsay, France
+  
+--
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
