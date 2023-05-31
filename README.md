@@ -159,7 +159,7 @@ No need for explications on what this command does.
 
 ## Author ##
 This program can be used freely and distributed according to CC-BY-NC-SA.
-It was written in Labview and it includes the JKI toolkits for Labview, © 2018, JKI. All rights reserved.
+It was written in Labview 2023, National Instruments and it includes the JKI toolkits for Labview, © 2023, JKI. All rights reserved.
 
 For questions or comments:
 
