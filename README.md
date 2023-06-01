@@ -31,13 +31,13 @@ When you click on one of the ten available cases, a new window will appear where
 You can edit the png image files to your liking (just for aesthetics, the calculations are not affected), they are in the subdirectory __/models__. The size of the png files should be 150x100 pixels.
 
 ### Elements ###
-The elements used now (as of march 2023) are: Resistor, Capacitor, Inductor, CPE, Zarc, simple Randles circuit, Randles with kinetic and diffusion, Warburg (semi-infinite linear diffusion), Warburg short, Warburg Long, Gerischer; Havriliak-Negami and several compositions of these.
+The elements used now (as of march 2023) are: Resistor, Capacitor, Inductor, CPE, Zarc, simple Randles circuit, Randles with kinetic and diffusion, Warburg (semi-infinite linear diffusion), Warburg short, Warburg Long, Gerischer, Havriliak-Negami and several compositions of these.
 
-Warburg element represents semi-infinite diffusion to or from a flat electrode coefficient, expressed here as:
+Warburg element represents semi-infinite diffusion to or from a flat electrode, expressed here as:
 
 Z(ω)= A<sub>w</sub>/($\sqrt{ω})$ -jA<sub>w</sub>/($\sqrt{ω})$
 
-This element contributes equally to Zr and Zi so it appears as a straigh line in a Nyquist plot, at 45 degrees or a straight line in Bode plot (log |Z| vs. log ω) with a slope of value –1/2. The Aw term is expressed in Ohm sec<Sup>-1/2</sup> and is called Warburg coefficient. It is expressed as
+This element contributes equally to Zr and Zi so it appears as a straigh line in a Nyquist plot, at 45 degrees or a straight line in Bode plot (log |Z| vs. log ω) with a slope of value –1/2. The A<sub>w</sub> term is expressed in Ohm sec<Sup>-1/2</sup> and is called Warburg coefficient. It is expressed as
 
 <img src="https://latex.codecogs.com/svg.image?Aw&space;=&space;\frac{RT}{{n^2&space;F^2&space;A&space;\sqrt{2}}}&space;\left(\frac{1}{{\sqrt{Do}&space;\cdot&space;Cb_o}}&space;-&space;\frac{1}{{\sqrt{Dr}&space;\cdot&space;Cb_r}}\right)" title="https://latex.codecogs.com/svg.image?Aw = \frac{RT}{{n^2 F^2 A \sqrt{2}}} \left(\frac{1}{{\sqrt{Do} \cdot Cb_o}} - \frac{1}{{\sqrt{Dr} \cdot Cb_r}}\right)" />
 
@@ -51,7 +51,7 @@ For a finite space (or time) diffusion and if the thickness of the diffusion lay
 
 Z<sub>o</sub>=(A<sub>w</sub>/ $\sqrt{jω})$ coth(B $\sqrt{jω})$
 
-Here A<sub>w</sub> is the standard Warburg coefficient and B is B=d/ $\sqrt{D}$ , where d is the Nernst diffusion layer thickness and D is the diffusion coefficient.
+Here A<sub>w</sub> is the standard Warburg coefficient and B is B=d/ $\sqrt{D}$ , where d is the diffusion layer thickness and D is the diffusion coefficient.
 
 The Warburg "short" describes the impedance of a finite-length diffusion with __transmissible boundary__, with the expression:
 
@@ -67,7 +67,7 @@ Some others functions can be added upon request, if I will have the time and if 
 
 ### Create a model ###
 
-When you create a circuit using the circuit editor, the circuit is not valid until you have properly connected all the elements together. Once the circuit is valid, a LED labeled "valid" will light up on the model panel, indicating that the circuit is ready for use and you can see a list of all the parameters for each element of the circuit. 
+When you create a model using the  editor, the circuit is not valid unless a flow of current can be calculated (but not a short-circuit). Once the circuit is valid, a LED labeled "valid" will light up on the model panel, indicating that the circuit is ready for use and you can see a list of all the parameters for each element of the circuit. 
 _Note : the parameters will be listed only if you have loaded experimental data!_
 
 Each parameter is labeled with a decimal, which indicates which element it belongs to. For example, the first element of the circuit will have parameters labeled as 0.x, the second element as 1.x, and so on. When you add a parallel RQ element to the first element of the circuit (a Zarc as element 0), you need to create "electrical contacts" in the next three elements (elements 1, 2, and 3, or 4,5 and 6, or 7, 8 and 9….) for the circuit to be complete. 
