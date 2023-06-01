@@ -68,7 +68,7 @@ Some others functions can be added upon request, if I will have the time and if 
 ### Create a model ###
 
 When you create a model using the  editor, the circuit is not valid unless a flow of current can be calculated (but not a short-circuit). Once the circuit is valid, a LED labeled "valid" will light up on the model panel, indicating that the circuit is ready for use and you can see a list of all the parameters for each element of the circuit. 
-_Note : the parameters will be listed only if you have loaded experimental data!_ If you forgot to load some data and already built a model, you can download some data then modify insignicantly the model to check for ts validity. However, in doing so, the paramaters of the model will be initialized to standard values. 
+_Note : the parameters will be listed only if you have loaded experimental data!_ If you forgot to load some data and already built a model, you can download some data then modify insignicantly the model to check for ts validity. However, in doing so, the paramaters of the model will be initialized to some dummy values. 
 
 Calculations of impedances are made whenever the parameter values are changed... _if the model is valid_ and you have some frequency points loaded. A three columns TAB separated file named __sim_freq_data.txt__ can be found and loaded if you want only to simulate the impedance spectrum. You can change the number of frequency points or range of frequencies to your interest. You can use the wheel of the mouse to evaluate the change in the output impedance with the change in the value of a parameter.
 
