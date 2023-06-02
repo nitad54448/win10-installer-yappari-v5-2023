@@ -87,7 +87,7 @@ Brief help listing the version of the program.
 
 # Commands #
 ## Read data ##
-This command opens a menu with several options as of now, designing which type of file to read. Note that reading a new file will just add more data wihtout lossing the previous data. You can remove some of the data with the command __Erase selected datasets__.
+This command opens a menu with several options as of now, designing which type of file to read. Note that reading a new file will just add more data wihtout losing the previous ones. You can remove some of the datasets with the command __Erase selected datasets__. You will need to select one or more datasets in order to plot them. 
 
 __MFLI csv__
 This is a comma separated values file as obtained from MFLI/MFIA, a Zurich Instruments impedance analyzer. As in the Zview text file, multiple data sets can be saved or read from this file. In the data folder that is provided with this installer you can find such a file containing 34 measurements of the same sample. It would be boring and useless to fit all these 34 datasets one by one. Yappari-5 can handle such multiple data sets.
