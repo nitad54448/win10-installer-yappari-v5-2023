@@ -106,6 +106,7 @@ The first line of these files can be a text (the program will try to detect and 
 __3 cols spaces__ and __3 cols commas__
 These are similar to tab separated files.
 
+In the /data folder you will find some datafiles, experimental or simulated with other programs. 
 
 ## Method ##
 This command allows the user to select the method used for nonlinear fitting. There are three methods available: Trusted Region Dog Led algorithm (TRDL), Constrained Levenberg Marquardt, and Levenberg Marquardt. The user can choose any of these methods, and if the model is robust, they should obtain the same results. 
