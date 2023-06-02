@@ -70,7 +70,7 @@ Some others functions can be added upon request, if I will have the time and if 
 When you create a model using the  editor, the circuit is not valid unless a flow of current can be calculated (but not a short-circuit). Once the circuit is valid, a LED labeled "valid" will light up on the model panel, indicating that the circuit is ready for use and you can see a list of all the parameters for each element of the circuit. 
 _Note : the parameters will be listed only if you have loaded experimental data!_ If you forgot to load some data and already built a model, you can download some data then modify insignicantly the model to check for ts validity. However, in doing so, the paramaters of the model will be initialized to some dummy values. 
 
-Calculations of impedances are made whenever the parameter values are changed... _if the model is valid_ and you have some frequency points loaded. A three columns TAB separated file named __sim_freq_data.txt__ can be found and loaded if you want only to simulate the impedance spectrum. You can change the number of frequency points or range of frequencies to your interest. You can use the wheel of the mouse to evaluate the change in the output impedance with the change in the value of a parameter.
+Calculations of impedances are made whenever the parameter values are changed... _if the model is valid_ and you have some data loaded. A three columns TAB separated file named __sim.txt__ can be found and loaded if you want only to simulate an impedance spectrum. You can change the number of frequency points or range of frequencies to your interest, just add or remove lines to this _sim.txt_ file. You can use the wheel of the mouse to evaluate the change in the output impedance with the change in the value of a parameter.
 
 Each parameter, listed on the right side of the page, is labeled with a decimal, which indicates which element it belongs to. For example, the first element of the circuit will have parameters labeled as 0.x, the second element as 1.x, and so on. When you add a parallel RQ element to the first element of the circuit (a Zarc as element 0), you need to create "electrical contacts" in the next three elements (elements 1, 2, and 3, or 4,5 and 6, or 7, 8 and 9….) for the circuit to be complete. 
 Otherwise, the circuit will be open and no impedance can be calculated. In other words all the elements of the circuit need to be properly connected for the circuit to be valid and for impedance calculations to be performed.
@@ -106,7 +106,15 @@ The first line of these files can be a text (the program will try to detect and 
 __3 cols spaces__ and __3 cols commas__
 These are similar to tab separated files.
 
-In the /data folder you will find some datafiles, experimental or simulated with other programs. 
+In the /data folder you will find some datafiles, experimental or simulated with other impedance programs. 
+  _sim.txt is a three columns separated by tabs with frequencies and "Nans", this file can be used if you want to simulate impedance spectra
+  _test_data.txt : is a three columns datafile, separated by Tabs with a simulated circuit R(RQ)(RQ)
+  dev3221_imps_0_sample_0000 is a measurement of a sample (including more than 20 datasets) as obtained with a MFLI/MFIA from Zurich Instruments.
+  mod_dev3221_imps_0_sample_0000 is a Zview txt file, as obtained with MFLI instrument (one dataset)
+  R(CR)(CR)W.txt is a simulated dataset with a Warburg element in a three columns separated by tabs
+  R(CR)O.txt is a simulated dataset with a Warburg "short" element (three columns separated by tabs)
+  R(CR)T.txt is a simulated dataset with a Warburg "open" element (three columns separated by tabs)
+  
 
 ## Method ##
 This command allows the user to select the method used for nonlinear fitting. There are three methods available: Trusted Region Dog Led algorithm (TRDL), Constrained Levenberg Marquardt, and Levenberg Marquardt. The user can choose any of these methods, and if the model is robust, they should obtain the same results. 
