@@ -106,13 +106,14 @@ __3 cols spaces__ and __3 cols commas__
 These are similar to tab separated files.
 
 In the /data folder you will find some datafiles, experimental or simulated with other impedance programs. 
-  _sim.txt is a three columns separated by tabs with 200 frequencies and "0", this file can be used if you want to simulate impedance spectrum of a model.
-  _test_data.txt : is a three columns datafile, separated by Tabs with a simulated circuit R(RQ)(RQ)
-  dev3221_imps_0_sample_0000 is a measurement of a sample (including more than 20 datasets) as obtained with a MFLI/MFIA from Zurich Instruments.
-  mod_dev3221_imps_0_sample_0000 is a Zview txt file, as obtained with MFLI instrument (one dataset)
-  R(CR)(CR)W.txt is a simulated dataset with a Warburg element in a three columns separated by tabs
-  R(CR)O.txt is a simulated dataset with a Warburg "short" element (three columns separated by tabs)
-  R(CR)T.txt is a simulated dataset with a Warburg "open" element (three columns separated by tabs)
+  
+  - _sim.txt is a three columns separated by tabs with 200 frequencies and "0", this file can be used if you want to simulate impedance spectrum of a model.
+  - _test_data.txt : is a three columns datafile, separated by Tabs with a simulated circuit R(RQ)(RQ)
+  - dev3221_imps_0_sample_0000 is a measurement of a sample (including more than 20 datasets) as obtained with a MFLI/MFIA from Zurich Instruments.
+  - mod_dev3221_imps_0_sample_0000 is a Zview txt file, as obtained with MFLI instrument (one dataset)
+  - R(CR)(CR)W.txt is a simulated dataset with a Warburg element in a three columns separated by tabs
+  - R(CR)O.txt is a simulated dataset with a Warburg "short" element (three columns separated by tabs)
+  - R(CR)T.txt is a simulated dataset with a Warburg "open" element (three columns separated by tabs)
   
 
 ## Method ##
