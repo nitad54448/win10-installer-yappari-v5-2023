@@ -165,7 +165,7 @@ Irreversible action removing one or more datasets and all related parameters fro
 This command generates an HTML report containing information about the model used, the parameters used, the fitted parameters, and their standard deviation. It also includes images of the fit as well as all experimental and calculated data. The report is saved in your temporary directory and automatically opened in a browser. You can use the data in the report to create your own graphs or to check for any discrepancies. If you find any errors in the calculations, please report them so they can be corrected.
 
 ### Z-Hit active datasets ###
-This option will provide a Z-HIT simulation for one or more datasets. The procedure, when and why to use it, is described [here](https://en.wikipedia.org/wiki/Z-HIT). In this implementation I am using the corrections including the 5rh derivative of the phase as described in the link given here. It a procedure is similar to the better known Kramers-Kronig test.
+This option will provide a Z-HIT simulation (which is a Hilbert transform of the phase into the real part of the impedance) for one or more datasets. The procedure, when and why to use it, is described [here](https://en.wikipedia.org/wiki/Z-HIT). In this implementation I am using the corrections including the 5th derivative of the phase as described in the link given here. This is a procedure similar to the better known Kramers-Kronig test.
   
 ### Help ###
 This will open a help file in a pdf format (the most recent help is always in this github page and not in the pdf file installed with the program).
