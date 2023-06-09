@@ -16,6 +16,7 @@ The program has several graphic panel window with, a parameter list and several 
 
 ## Zr, -Zi ##
 This panel shows a Nyquist plot, which is a standard way to visualize impedance data. The scale on the graph will adjust automatically based on the data, with the same axis range for the imaginary part and real part. However, if you want to manually set a specific range, you can disable the Auto-axis feature by clicking on the graph, or directly changing the scale in the legend. Some other standard graph functions are available in the top left "palette" such as zoom in, out... etc. All graphic panels will plot experimental and simulated data (if any) of selected datasets.
+The change of the plot colors, style, etc.... in this graph will affect all the graphs.
 
 ## Zr, Zi, ln R, theta ##
 These panels will show the dependency of impedances (real, imaginary, modulus or phase) as a function of frequency and the differences between the calculated and experimental values (if any).
