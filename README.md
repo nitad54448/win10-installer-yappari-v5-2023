@@ -2,7 +2,8 @@
 Yappari 5.0.1, Windows 10 installer, compiled with Labview 2023
 
 version 9 june 2023, 
-now with Z-Hit fit, up to 3rd correction term of the derivative.
+now with Z-Hit calculation.
+
 
 __YAPPARI__ stands for Yet Another Program for Analysis and Research in Impedance.
 This program can be referenced in publications as http://dx.doi.org/10.13140/RG.2.2.15160.83200
