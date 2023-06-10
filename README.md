@@ -144,7 +144,7 @@ This button can trigger several commands:
 Copy the listed parameters to all datasets. Useful for bulk fitting.
 
 ### Save active exp datasets ###
-This command allows you to save the *active* experimental data, that means the selected ones, to a single file in a specific format. The format is three columns separated by tabs, with frequency in Hz, Zr, and Zi. This is useful for simulating impedance spectra for a given model. 
+This command allows you to save the *active* experimental data, that means the selected ones, to a single file in a specific format. The format is three columns separated by tabs, with frequency in Hz, Zr, and Zi. This is useful for simulating impedance spectra for a given model. All the datasets will be saved in a single file, each data susequenntly added, with its name, to the same file.
 
 ### Save active calc datasets ###
 This command allows you to save the *active* calculated data to a file in a three columns format.
