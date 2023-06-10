@@ -1,7 +1,7 @@
 # win10-installer-yappari-v5-2023
 Yappari 5.0.1, Windows 10 installer, compiled with Labview 2023
 
-version 9 june 2023, 
+version 10 june 2023, 
 now with Z-Hit calculation.
 
 
@@ -142,9 +142,6 @@ This button can trigger several commands:
 
 ### Clone these parameters to all ### 
 Copy the listed parameters to all datasets. Useful for bulk fitting.
-
-### Save all parameters ###
-Save all parameters names and values for all datasets in a file.
 
 ### Save active exp datasets ###
 This command allows you to save the *active* experimental data, that means the selected ones, to a single file in a specific format. The format is three columns separated by tabs, with frequency in Hz, Zr, and Zi. This is useful for simulating impedance spectra for a given model. 
