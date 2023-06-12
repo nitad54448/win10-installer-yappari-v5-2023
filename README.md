@@ -178,6 +178,7 @@ __Nita DRAGOE__, Université Paris-Saclay, ICMMO/SP2M, 91400 Orsay, France
   
 ### Changes ###
   12/06/2023 : added a fourth term in the Z-hit calculations (the one with the pi^7/604800). It's contribution is very small though.
+  
   10/06/2023 : added the Z-hit calculation.
   
 --
