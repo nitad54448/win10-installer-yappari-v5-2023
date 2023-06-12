@@ -1,8 +1,11 @@
 # win10-installer-yappari-v5-2023
 Yappari 5.0.1, Windows 10 installer, compiled with Labview 2023
 
+version 12/06/2023
+added a fourth coefficient to the Z-Hit calculation.
+
 version 10 june 2023, 
-now with Z-Hit calculation.
+added Z-Hit calculation.
 
 
 __YAPPARI__ stands for Yet Another Program for Analysis and Research in Impedance.
