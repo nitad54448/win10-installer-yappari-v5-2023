@@ -83,6 +83,10 @@ The numbering of the devices goes from left to right and top to bottom. For exam
 
 Overall, the notation is quite straightforward once you become familiar with the conventions used.
 
+
+## Parameters ##
+This panel you can setup the parameters boudaries for TRDL and constrained Levenberg-Marquardt procedure. In addition the datafile separator can be selected here. When reading a MFLI csv file you have probably a _,_ or _;_ separator. You need to inspect the data file then select the proper string here. For 3 columns, _tabs_ are typically used. Note that the separator used here for reading will also be used for exporting the data files. 
+
 ## About ##
 Brief help listing the version of the program. 
 
