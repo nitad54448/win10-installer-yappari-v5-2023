@@ -70,7 +70,7 @@ Some others functions can be added upon request, if I will have the time and if 
 When you create a model using the  editor, the circuit is not valid unless a flow of current can be calculated (but not a short-circuit). Once the circuit is valid, a LED labeled "valid" will light up on the model panel, indicating that the circuit is ready for use and you can see a list of all the parameters for each element of the circuit. 
 _Note : the parameters will be listed only if you have loaded experimental data!_ If you forgot to load data and already built a model, you can read data then modify the model to check for its validity (for instance, replace one element with the same one, this will trigger a validity check in the program). However, in doing so, the paramaters of the model will be initialized to some dummy values. To see the experimental data and the simulaion you need to select one or mor datasets.
 
-Calculations of impedances are made whenever the parameter values are changed... _if the model is valid_ and if you have some data loaded. A three columns TAB separated file named __sim.txt__ can be found and loaded if you want only to simulate an impedance spectrum. You can change the number of frequency points or range of frequencies to your interest, just add or remove lines to this _sim.txt_ file. You can use the wheel of the mouse to evaluate the change in the output impedance with the change in the value of a parameter.
+Calculations of impedances are made whenever the parameter values are changed... _if the model is valid_ and if you have some data loaded. You can use the wheel of the mouse to evaluate the change in the output impedance with the change in the value of a parameter.
 
 Each parameter, listed on the right side of the page, is labeled with a decimal, which indicates which element it belongs to. For example, the first element of the circuit will have parameters labeled as 0.x, the second element as 1.x, and so on. When you add a parallel RQ element to the first element of the circuit (a Zarc as element 0), you need to create "electrical contacts" in the next three elements (elements 1, 2, and 3, or 4,5 and 6, or 7, 8 and 9….) for the circuit to be complete. 
 Otherwise, the circuit will be open and no impedance can be calculated. In other words all the elements of the circuit need to be properly connected for the circuit to be valid and for impedance calculations to be performed.
@@ -109,7 +109,6 @@ The first line of these files can be a text (the program will try to detect and 
 
 In the /data folder you will find some datafiles, experimental or simulated with other impedance programs. 
   
-  - _sim.txt is a three columns separated by tabs with 200 frequencies and "0", this file can be used if you want to simulate impedance spectrum of a model.
   - _test_data.txt : is a three columns datafile, separated by Tabs with a simulated circuit R(RQ)(RQ)
   - dev3221_imps_0_sample_0000 is a measurement of a sample (including more than 20 datasets) as obtained with a MFLI/MFIA from Zurich Instruments; separator for this file is ';'
   - mod_dev3221_imps_0_sample_0000 is a Zview txt file, as obtained with MFLI instrument (one dataset)
@@ -178,13 +177,10 @@ For questions or comments:
 __Nita DRAGOE__, Université Paris-Saclay, ICMMO/SP2M, 91400 Orsay, France
   
 ### Changes ###
-  15/06/2023 : the user can select the separator used for MFLI CSV and 3 columns file. The same separator (space, comma or TAB) will be used for saving files.
-  
-  14/06/2023 : added the possibility user selected boundaries for TRDL and constrained LM fit.
-  
-  12/06/2023 : added a fourth term in the Z-hit calculations (the one with the pi^7/604800). It's contribution is very small though.
-  
-  10/06/2023 : added the Z-hit calculation.
+  -  15/06/2023 : the user can select the separator used for MFLI CSV and 3 columns file. The same separator (space, comma or TAB) will be used for saving files.
+  -  14/06/2023 : added the possibility user selected boundaries for TRDL and constrained LM fit.
+  -  12/06/2023 : added a fourth term in the Z-hit calculations (the one with the pi^7/604800). It's contribution is very small though.
+  -  10/06/2023 : added the Z-hit calculation.
   
 --
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
