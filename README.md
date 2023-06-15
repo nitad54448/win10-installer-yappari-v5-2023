@@ -1,7 +1,7 @@
 # win10-installer-yappari-v5-2023
-Yappari 5.0.1, Windows 10 installer, compiled with Labview 2023
+Yappari 5.1, Windows 10 installer, compiled with Labview 2023
 
-version 12th of june 2023
+version 15th of june 2023
 
 __YAPPARI__ stands for Yet Another Program for Analysis and Research in Impedance.
 This program can be referenced in publications as http://dx.doi.org/10.13140/RG.2.2.15160.83200
@@ -177,6 +177,10 @@ For questions or comments:
 __Nita DRAGOE__, Université Paris-Saclay, ICMMO/SP2M, 91400 Orsay, France
   
 ### Changes ###
+  15/06/2023 : the user can select the separator used for MFLI CSV and 3 columns file. The same separator (space, comma or TAB) will be used for saving files.
+  
+  14/06/2023 : added the possibility user selected boundaries for TRDL and constrained LM fit.
+  
   12/06/2023 : added a fourth term in the Z-hit calculations (the one with the pi^7/604800). It's contribution is very small though.
   
   10/06/2023 : added the Z-hit calculation.
