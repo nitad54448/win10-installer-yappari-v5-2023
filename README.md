@@ -95,26 +95,23 @@ Brief help listing the version of the program.
 This command opens a menu with several options as of now, designing which type of file to read. Note that reading a new file will just add more data wihtout losing the previous ones. You can remove some of the datasets with the command __Erase selected datasets__. You will need to select one or more datasets in order to plot them. 
 
 __MFLI csv__
-This is a comma separated values file as obtained from MFLI/MFIA, a Zurich Instruments impedance analyzer. As in the Zview text file, multiple data sets can be saved or read from this file. In the data folder that is provided with this installer you can find such a file containing 34 measurements of the same sample. It would be boring and useless to fit all these 34 datasets one by one. Yappari-5 can handle such multiple data sets.
+This is a ';' or ',' separated values file as obtained from MFLI/MFIA, a Zurich Instruments impedance analyzer. As in the Zview text file, multiple data sets can be saved or read from this file. In the data folder that is provided with this installer you can find such a file containing 34 measurements of the same sample. It would be boring and useless to fit all these 34 datasets one by one. Yappari-5 can handle such multiple data sets. You can select the separator string to be used in the Parameters page.
 
 __Versa Studio par__
 This type of file contains data delimited by <Segments> and >/Segments>. I did not exenisively checked this type of file, an example is given in the /data folder. 
 
 __Zview txt__
-This is a Zview file, also an ASCII type, that can hold multiple data sets. Yappari will read all datasets it finds in this file and insert them in the datasets listing, with a name taken from the file name and a suffix indicating the position in the file : the first datasets will have__0__, then __1__, .. and so on.
+This is a Zview file, also an ASCII type, that can hold multiple data sets. Yappari will read all datasets it finds in this file and insert them in the datasets listing, with a name taken from the file name and a suffix indicating the position in the file : the first datasets will have__0__, then __1__, .. and so on. The separator setting will not be used in reading this file.
   
-__3 cols tabs__
-This reads a three-column ASCII file, which should be separated by tabs and contain frequency in Hz, Zr, and Zi. It is important to note that for French users (and some others), the separator value should be a dot “.” and not a comma “,”. If the reading is successful, the dataset will be inserted in the first position with a name taken from the filename open. This name can be changed by the user. Only one dataset can be read with this command.
+__3 cols__
+This reads a three-column ASCII file, which should be separated by tabs, ; or , and contain frequency in Hz, Zr, and Zi. The separator used can be selected in the Parameters page. It is important to note that for French users (and some others), the separator value should be a dot “.” and not a comma “,”. If the reading is successful, the dataset will be inserted in the first position with a name taken from the filename open. This name can be changed by the user. Only one dataset can be read with this command. 
 The first line of these files can be a text (the program will try to detect and discard a comment in the first line; if it fails, just remove all comments from the file and try again).
-
-__3 cols spaces__ and __3 cols commas__
-These are similar to tab separated files.
 
 In the /data folder you will find some datafiles, experimental or simulated with other impedance programs. 
   
   - _sim.txt is a three columns separated by tabs with 200 frequencies and "0", this file can be used if you want to simulate impedance spectrum of a model.
   - _test_data.txt : is a three columns datafile, separated by Tabs with a simulated circuit R(RQ)(RQ)
-  - dev3221_imps_0_sample_0000 is a measurement of a sample (including more than 20 datasets) as obtained with a MFLI/MFIA from Zurich Instruments.
+  - dev3221_imps_0_sample_0000 is a measurement of a sample (including more than 20 datasets) as obtained with a MFLI/MFIA from Zurich Instruments; separator for this file is ';'
   - mod_dev3221_imps_0_sample_0000 is a Zview txt file, as obtained with MFLI instrument (one dataset)
   - R(CR)(CR)W.txt is a simulated dataset with a Warburg element in a three columns separated by tabs
   - R(CR)O.txt is a simulated dataset with a Warburg "short" element (three columns separated by tabs)
@@ -146,10 +143,10 @@ This button can trigger several commands:
 Copy the listed parameters to all datasets. Useful for bulk fitting.
 
 ### Save active exp datasets ###
-This command allows you to save the *active* experimental data, that means the selected ones, to a single file in a specific format. The format is three columns separated by tabs, with frequency in Hz, Zr, and Zi. This is useful for simulating impedance spectra for a given model. All the datasets will be saved in a single file, each data susequenntly added, with its name, to the same file.
+This command allows you to save the *active* experimental data, that means the selected ones, to a single file in a specific format. The format is three columns, separated by the string you selected in the Parameters page, with frequency in Hz, Zr, and Zi. This is useful for simulating impedance spectra for a given model. All the datasets will be saved in a single file, each data susequenntly added, with its name, to the same file.
 
 ### Save active calc datasets ###
-This command allows you to save the *active* calculated data to a file in a three columns format.
+This command allows you to save the *active* calculated data to a file in a three columns format, separated by the string you selected in the Parameters page.
 
 ### Save active exp and calc datasets ###
 This command allows you to save the *active* experimental data and calculated data, in a 5 columns ASCII file. Note that all datasets are saved in a single file, each dataset will be separated by the label of the set. This might be used to plot nicer graphs.
