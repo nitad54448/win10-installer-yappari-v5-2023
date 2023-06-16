@@ -11,13 +11,13 @@ This program can perform multiple datasets fits. For a single dataset you may wa
 You are encouraged to contribute to this help file, you can send it to me or fork it on Github. As much as I like programming, writing documentation is boring. A short tutorial is included in the help pdf file which is installed with the exe file. 
 It is generally a good idea to read a help file before using the program, but if you are in a hurry, this is what you should do :
 
-  -select string delimiter on the Parameters page
+  - select string delimiter on the Parameters page (essential, if you are using MFLI csv or 3 columns file)
+  - read some data
+  - build a model
+  - fit
 
-  -read some date
-  
-  -build a model
-  
-  -fit
+A general description of the program and a tutorial can be found in a pdf file installed along with the program. Otherwise, the most updated description of the program is always here on github.
+
 
 # Panels #
 The program has several graphic panel window with, a parameter list and several commands grouped in the right side of the window.
