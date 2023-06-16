@@ -1,7 +1,7 @@
 # win10-installer-yappari-v5-2023
 Yappari 5.1, Windows 10 installer, compiled with Labview 2023
 
-version 15th of june 2023
+version 16th of june 2023
 
 __YAPPARI__ stands for Yet Another Program for Analysis and Research in Impedance.
 This program can be referenced in publications as http://dx.doi.org/10.13140/RG.2.2.15160.83200
@@ -9,6 +9,15 @@ This program can be referenced in publications as http://dx.doi.org/10.13140/RG.
 This program can perform multiple datasets fits. For a single dataset you may want to use a simpler program called [Yappari 4.2](https://github.com/nitad54448/win10-installer-yappari-4.2), available also as a Windows 10 installer. This single dataset program will not be developed further.
 
 You are encouraged to contribute to this help file, you can send it to me or fork it on Github. As much as I like programming, writing documentation is boring. A short tutorial is included in the help pdf file which is installed with the exe file. 
+It is generally a good idea to read a help file before using the program, but if you are in a hurry, this is what you should do :
+
+  - select string delimiter on the Parameters page (essential, if you are using MFLI csv or 3 columns file)
+  - read some data
+  - build a model
+  - fit
+
+A general description of the program and a tutorial can be found in a pdf file installed along with the program. Otherwise, the most updated description of the program is always here on github.
+
 
 # Panels #
 The program has several graphic panel window with, a parameter list and several commands grouped in the right side of the window.
@@ -85,7 +94,7 @@ Overall, the notation is quite straightforward once you become familiar with the
 
 
 ## Parameters ##
-This panel you can setup the parameters boudaries for TRDL and constrained Levenberg-Marquardt procedure. In addition the datafile separator can be selected here. When reading a MFLI csv file you have probably a _,_ or _;_ separator. You need to inspect the data file then select the proper string here. For 3 columns, _tabs_ are typically used. Note that the separator used here for reading will also be used for exporting the data files. 
+On this page you can adjust the parameters boudaries for TRDL and constrained Levenberg-Marquardt procedure. In addition the datafile separator can be selected here. When reading a MFLI csv file you have probably a _,_ or _;_ separator. You need to inspect the data file then select the proper string here. For 3 columns, _tabs_ are typically used. Note that the separator used here for reading will also be used for exporting the data files. 
 
 ## About ##
 Brief help listing the version of the program. 
@@ -177,6 +186,7 @@ For questions or comments:
 __Nita DRAGOE__, Université Paris-Saclay, ICMMO/SP2M, 91400 Orsay, France
   
 ### Changes ###
+  -  16/06/2023 : after loading a datafile, the first dataset is selected automatically.
   -  15/06/2023 : the user can select the separator used for MFLI CSV and 3 columns file. The same separator (space, comma or TAB) will be used for saving files.
   -  14/06/2023 : added user selected boundaries for TRDL and constrained LM fit.
   -  12/06/2023 : added a fourth term in the Z-hit calculations (the one with the pi^7/604800). It's contribution is very small though.
