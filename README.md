@@ -8,10 +8,15 @@ This program can be referenced in publications as http://dx.doi.org/10.13140/RG.
 
 This program can perform multiple datasets fits. For a single dataset you may want to use a simpler program called [Yappari 4.2](https://github.com/nitad54448/win10-installer-yappari-4.2), available also as a Windows 10 installer. This single dataset program will not be developed further.
 
-You are encouraged to contribute to this help file, you can send it to me or fork it on Github. As much as I like programming, writing documentation is boring. A short tutorial is included in the help pdf file which is installed with the exe file. It is generally a good idea to read a help file before using the program, but if you are in a hurry, this is what you should do :
+You are encouraged to contribute to this help file, you can send it to me or fork it on Github. As much as I like programming, writing documentation is boring. A short tutorial is included in the help pdf file which is installed with the exe file. 
+It is generally a good idea to read a help file before using the program, but if you are in a hurry, this is what you should do :
+
   -select string delimiter on the Parameters page
+
   -read some date
+  
   -build a model
+  
   -fit
 
 # Panels #
