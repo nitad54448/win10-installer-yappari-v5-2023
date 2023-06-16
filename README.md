@@ -1,7 +1,7 @@
 # win10-installer-yappari-v5-2023
 Yappari 5.1, Windows 10 installer, compiled with Labview 2023
 
-version 15th of june 2023
+version 16th of june 2023
 
 __YAPPARI__ stands for Yet Another Program for Analysis and Research in Impedance.
 This program can be referenced in publications as http://dx.doi.org/10.13140/RG.2.2.15160.83200
@@ -85,7 +85,7 @@ Overall, the notation is quite straightforward once you become familiar with the
 
 
 ## Parameters ##
-This panel you can setup the parameters boudaries for TRDL and constrained Levenberg-Marquardt procedure. In addition the datafile separator can be selected here. When reading a MFLI csv file you have probably a _,_ or _;_ separator. You need to inspect the data file then select the proper string here. For 3 columns, _tabs_ are typically used. Note that the separator used here for reading will also be used for exporting the data files. 
+On this page you can adjust the parameters boudaries for TRDL and constrained Levenberg-Marquardt procedure. In addition the datafile separator can be selected here. When reading a MFLI csv file you have probably a _,_ or _;_ separator. You need to inspect the data file then select the proper string here. For 3 columns, _tabs_ are typically used. Note that the separator used here for reading will also be used for exporting the data files. 
 
 ## About ##
 Brief help listing the version of the program. 
