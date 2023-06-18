@@ -19,7 +19,7 @@ It is generally a good idea to read a help file before using the program, but if
 
 
 # Panels #
-The program has several graphic panel window with, a parameter list and several commands grouped in the right side of the window.
+The program has several graphic panels and a parameter list with several commands grouped on the right side of the window.
 
 ## Zr, -Zi ##
 This panel shows a Nyquist plot, which is a standard way to visualize impedance data. The scale on the graph will adjust automatically based on the data, with the same axis range for the imaginary part and real part. However, if you want to manually set a specific range, you can disable the Auto-axis feature by clicking on the graph, or directly changing the scale in the legend. Some other standard graph functions are available in the top left "palette" such as zoom in, out... etc. All graphic panels will plot experimental and simulated data (if any) of selected datasets.
